@@ -76,8 +76,7 @@ const Node = ({ data: { isLeaf, name, nestingLevel }, height, isOpen, style, tog
 function App() {
   const ref = useRef(null)
   const handleClick = () => {
-    console.log('ff')
-    return ref.current.recomputeTree({ opennessState: { 'root-1': true, 'child-1': true } })
+    return ref.current.recomputeTree({ opennessState: { 'child-1': true } })
   }
   return (
     <div className="App">
